@@ -14,7 +14,8 @@ Munros.prototype.getData = function () {
 };
 
 Munros.prototype.handleDataReady = function (munros) {
-  this.munros = munros.map(munro => return {name: munro.name, height: munro.height}; )
+  this.munros = munros.map(munro => munro.name )
+  return this.munros;
 };
 
 
